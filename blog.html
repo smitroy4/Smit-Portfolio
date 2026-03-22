@@ -2,38 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Smit Roy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <h1>Blog</h1>
+<main class="container">
 
-  <div class="card">
-    <h2>Understanding JWT in Spring Boot</h2>
-    <a class="button" href="blog/blog1.html">Read</a>
-  </div>
+  <!-- TITLE -->
+  <section class="section">
+    <h1>Blog</h1>
+    <p class="subtext">
+      Sharing my learnings and insights in backend development and system design.
+    </p>
+  </section>
+
+  <!-- BLOG LIST -->
+  <section class="section">
+
+    <div class="blog-list">
+
+      <!-- BLOG CARD -->
+      <div class="blog-card">
+        <h2>Understanding JWT Authentication in Spring Boot</h2>
+        <p>
+          A practical breakdown of how JWT works in backend systems and how to implement it in Spring Boot.
+        </p>
+        <a href="blog/blog1.html" class="btn primary">Read More</a>
+      </div>
+<br>
+      <!-- BLOG CARD -->
+      <div class="blog-card">
+        <h2>LAZY vs EAGER Loading in JPA</h2>
+        <p>
+          Understanding fetch types in JPA and how they impact performance and application behavior.
+        </p>
+        <a href="blog/blog2.html" class="btn primary">Read More</a>
+      </div>
+<br>
+      <!-- BLOG CARD -->
+      <div class="blog-card">
+        <h2>Designing a Booking Conflict System</h2>
+        <p>
+          How I implemented a system to prevent overlapping bookings in my backend project.
+        </p>
+        <a href="blog/blog3.html" class="btn primary">Read More</a>
+      </div>
+<br>
+    </div>
+
+  </section>
 
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>

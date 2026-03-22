@@ -2,35 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Smit Roy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <h1>Contact</h1>
-  <p>Email: smitroy22@gmail.com</p>
-  <p>LinkedIn: Your link</p>
-  <p>GitHub: Your link</p>
+<main class="container">
+
+  <!-- TITLE -->
+  <section class="section center">
+    <h1>Contact</h1>
+    <p class="subtext">
+      Feel free to reach out for opportunities, collaborations, or just a quick discussion.
+    </p>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="section contact-grid">
+
+    <!-- LEFT -->
+    <div>
+      <h2>Get in Touch</h2>
+      <p>
+        I am currently open to entry-level Java Backend Developer roles and would
+        love to connect with professionals in the industry.
+      </p>
+
+      <div class="contact-links">
+        <p><strong>Email:</strong> <a href="mailto:smitroy22@gmail.com">smitroy22@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="#">Your GitHub Link</a></p>
+        <p><strong>LinkedIn:</strong> <a href="#">Your LinkedIn Link</a></p>
+      </div>
+    </div>
+
+    <!-- RIGHT (FORM UI) -->
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+
+  </section>
+
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>

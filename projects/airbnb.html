@@ -2,43 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Booking System | Smit Roy</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../projects.html" class="active">Projects</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <h1>Airbnb - Rental Booking Backend System</h1>
 
-  <p>Built using Spring Boot, JWT, PostgreSQL.</p>
+  <!-- 🔥 PROJECT BANNER -->
+  <section class="project-banner">
+    <img src="../assets/project-banner.jpg" alt="Project Banner">
+    <div class="banner-text">
+      <h1>Rental Booking Backend System</h1>
+    </div>
+  </section>
 
-  <ul>
-    <li>JWT Authentication</li>
-    <li>Role-based access</li>
-    <li>Booking conflict handling</li>
-    <li>Pagination & filtering</li>
-  </ul>
+  <div class="container">
 
-  <a class="button" href="https://github.com/yourrepo">View GitHub</a>
+    <!-- OVERVIEW -->
+    <section class="section">
+      <h2>Overview</h2>
+      <p>
+        A scalable backend system designed to manage users, property listings,
+        and bookings. Built using Spring Boot and PostgreSQL with a focus on
+        real-world backend challenges such as authentication and booking conflicts.
+      </p>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section">
+      <h2>Tech Stack</h2>
+      <div class="tags">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Spring Security</span>
+        <span>JPA</span>
+        <span>PostgreSQL</span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <h2>Key Features</h2>
+      <ul class="features">
+        <li>JWT-based authentication and role-based access</li>
+        <li>Booking conflict handling system</li>
+        <li>Pagination and filtering APIs</li>
+        <li>Clean layered architecture (Controller-Service-Repository)</li>
+      </ul>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section">
+      <h2>System Design</h2>
+      <p>
+        The system follows a layered architecture where controllers handle HTTP requests,
+        services manage business logic, and repositories interact with the database.
+        Authentication is handled using JWT tokens to maintain stateless sessions.
+      </p>
+    </section>
+
+    <!-- 🔥 GALLERY -->
+    <section class="section">
+      <h2>Project Gallery</h2>
+
+      <div class="gallery">
+        <img src="../assets/project1.png" alt="Screenshot 1">
+        <img src="../assets/project2.png" alt="Screenshot 2">
+        <img src="../assets/project3.png" alt="Screenshot 3">
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section">
+      <h2>Project Links</h2>
+      <a href="#" class="btn primary">View GitHub</a>
+    </section>
+
+  </div>
+
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
-<script src="js/script.js"></script>
 </body>
 </html>

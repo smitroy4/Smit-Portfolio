@@ -2,43 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Smit Roy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <h1>Projects</h1>
+<main class="container">
 
-  <div class="card">
-    <h2>Rental Booking Backend System</h2>
-    <a class="button" href="projects/airbnb.html">View Details</a>
-  </div>
+  <!-- TITLE -->
+  <section class="section">
+    <h1>Projects</h1>
+    <p class="subtext">
+      A collection of backend systems and applications I have built using Java and Spring Boot.
+    </p>
+  </section>
 
-  <div class="card">
-    <h2>Course Enrollment System</h2>
-    <a class="button" href="projects/course.html">View Details</a>
-  </div>
+  <!-- FEATURED PROJECTS -->
+  <section class="section">
+
+    <div class="project-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <h2>Airbnb - Rental Booking Backend System</h2>
+
+        <p>
+          A scalable backend system for managing property listings, users, and bookings.
+          Built using Spring Boot and PostgreSQL with real-world backend logic.
+        </p>
+
+        <div class="tags">
+          <span>Spring Boot</span>
+          <span>JWT</span>
+          <span>JPA</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <ul class="features">
+          <li>JWT-based authentication and role-based access</li>
+          <li>Booking conflict handling system</li>
+          <li>Pagination and filtering for APIs</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="projects/airbnb.html" class="btn primary">Details</a>
+          <a href="#" class="btn outline">GitHub</a>
+        </div>
+      </div>
+<br><br>
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <h2>Course Enrollment System</h2>
+
+        <p>
+          Backend system to manage student-course relationships with efficient data handling
+          and API design.
+        </p>
+
+        <div class="tags">
+          <span>Spring Boot</span>
+          <span>JPA</span>
+          <span>MySQL</span>
+        </div>
+
+        <ul class="features">
+          <li>Many-to-Many mapping implementation</li>
+          <li>Duplicate enrollment prevention</li>
+          <li>Structured layered architecture</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="projects/course.html" class="btn primary">Details</a>
+          <a href="#" class="btn outline">GitHub</a>
+        </div>
+      </div>
+<br><br>
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <h2>Lovable Clone (AI + Backend)</h2>
+
+        <p>
+          Experimenting with AI-integrated backend workflows.
+        </p>
+
+        <div class="tags">
+          <span>Spring Boot</span>
+          <span>JPA</span>
+          <span>MySQL</span>
+        </div>
+
+        <ul class="features">
+          <li>Many-to-Many mapping implementation</li>
+          <li>Duplicate enrollment prevention</li>
+          <li>Structured layered architecture</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="projects/course.html" class="btn primary">Details</a>
+          <a href="#" class="btn outline">GitHub</a>
+        </div>
+      </div>
+<br><br>      
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <h2>LinkedIn Clone (Microservices)</h2>
+
+        <p>
+          Exploring distributed systems and service-based architecture.
+        </p>
+
+        <div class="tags">
+          <span>Spring Boot</span>
+          <span>JPA</span>
+          <span>MySQL</span>
+        </div>
+
+        <ul class="features">
+          <li>Many-to-Many mapping implementation</li>
+          <li>Duplicate enrollment prevention</li>
+          <li>Structured layered architecture</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="projects/course.html" class="btn primary">Details</a>
+          <a href="#" class="btn outline">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WIP PROJECTS
+  <section class="section">
+    <h2>Work in Progress</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card small">
+        <h3>LinkedIn Clone (Microservices)</h3>
+        <p>Exploring distributed systems and service-based architecture.</p>
+      </div>
+
+      <div class="project-card small">
+        <h3>Lovable Clone (AI + Backend)</h3>
+        <p>Experimenting with AI-integrated backend workflows.</p>
+      </div>
+
+    </div>
+  </section> -->
 
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>

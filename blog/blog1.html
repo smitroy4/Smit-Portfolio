@@ -2,36 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Authentication | Smit Roy</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <h1>Understanding JWT in Spring Boot</h1>
+<main class="container blog-post">
 
-  <p>
-    JWT (JSON Web Token) is used for secure authentication...
-  </p>
+  <!-- TITLE -->
+  <h1>Understanding JWT Authentication in Spring Boot</h1>
+  <p class="subtext">Published by Smit Roy</p>
+
+  <!-- 🔥 INTRO WITH IMAGE -->
+  <section class="blog-intro">
+    
+    <div class="blog-text">
+      <p>
+        JWT (JSON Web Token) is one of the most commonly used authentication mechanisms
+        in modern backend systems. It enables stateless authentication and allows secure
+        communication between client and server without storing session data on the server.
+      </p>
+
+      <p>
+        In this article, I’ll break down how JWT works and how it is implemented
+        in a Spring Boot application.
+      </p>
+    </div>
+
+    <div class="blog-image">
+      <img src="../assets/jwt-banner.jpg" alt="JWT Diagram">
+    </div>
+
+  </section>
+
+  <!-- CONTENT -->
+  <section>
+
+    <h2>How JWT Works</h2>
+    <p>
+      When a user logs in, the server verifies credentials and generates a JWT token.
+      This token is sent back to the client and stored (usually in local storage).
+    </p>
+
+    <p>
+      For every subsequent request, the client sends this token in the Authorization header.
+      The server validates the token and processes the request.
+    </p>
+
+    <h2>Why Use JWT?</h2>
+    <ul>
+      <li>Stateless authentication</li>
+      <li>Scalable architecture</li>
+      <li>Reduced server load</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      JWT is powerful but must be implemented carefully. Understanding how tokens work
+      is essential for building secure backend systems.
+    </p>
+
+  </section>
+
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
-<script src="js/script.js"></script>
 </body>
 </html>

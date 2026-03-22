@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Smit Roy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -20,18 +22,74 @@
   </nav>
 </header>
 
-<main>
-  <h1>About Me</h1>
-  <p>
-    I'm a Java backend developer focused on building scalable REST APIs
-    using Spring Boot, JPA, and relational databases.
-  </p>
+<main class="container">
+
+  <!-- ABOUT INTRO -->
+  <section class="section about-grid">
+
+    <!-- LEFT (TEXT) -->
+    <div>
+      <h1>About Me</h1>
+
+      <p>
+        I'm a Java Backend Developer focused on building scalable REST APIs using
+        Spring Boot and relational databases. I enjoy working on backend systems
+        where performance, structure, and clean architecture matter.
+      </p>
+
+      <p>
+        Currently, I am pursuing my MCA while actively developing backend projects
+        to strengthen my practical understanding of real-world systems including
+        authentication, database relationships, and API design.
+      </p>
+
+      <p>
+        My goal is to work as a backend developer where I can contribute to building
+        production-level applications and continuously improve my engineering skills.
+      </p>
+    </div>
+
+    <!-- RIGHT (PHOTO) -->
+    <div class="about-image">
+      <img src="assets\smit-roy.jpg" alt="Smit Roy">
+    </div>
+
+  </section>
+
+  <!-- SKILLS / APPROACH -->
+  <section class="section">
+    <h2>How I Work</h2>
+
+    <div class="grid-4">
+      <div class="card">Clean and structured backend architecture</div>
+      <div class="card">Focus on scalable API design</div>
+      <div class="card">Strong understanding of authentication systems</div>
+      <div class="card">Continuous learning and improvement</div>
+    </div>
+  </section>
+
+  <!-- TECH FOCUS -->
+  <section class="section">
+    <h2>Technical Focus</h2>
+
+    <div class="tags">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>Spring Security</span>
+      <span>JPA</span>
+      <span>MySQL</span>
+      <span>PostgreSQL</span>
+      <span>REST APIs</span>
+    </div>
+  </section>
+
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>

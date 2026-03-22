@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smit Roy | Portfolio</title>
-  <link rel="stylesheet" href="\css\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smit Roy | Java Backend Developer</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Smit Roy</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">Smit Roy</h2>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -21,20 +24,96 @@
 </header>
 
 <main>
-    <h1>Hi, I'm Smit Roy</h1>
-  <p>Java Backend Developer specializing in Spring Boot and REST APIs.</p>
 
-  <div class="card">
-    <h2>Featured Projects</h2>
-    <p>Rental Booking Backend System</p>
-    <a class="button" href="projects/airbnb.html">View Project</a>
-  </div>
+  <!-- BANNER -->
+  <section class="banner">
+    <img src="assets\Home - banner.png" alt="Backend Development Banner">
+    <div class="banner-text">
+      <!-- <h2>Building Scalable Backend Systems</h2> -->
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <h1>Java Backend Developer</h1>
+    <p class="subtitle">
+      Building scalable REST APIs using Spring Boot, JPA, and relational databases.
+    </p>
+    <p class="subtext">
+      Focused on clean backend architecture, authentication systems, and efficient data handling.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn primary">View Projects</a>
+      <a href="contact.html" class="btn outline">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section class="section container">
+    <h2>What I Do</h2>
+    <div class="grid-4">
+      <div class="card">REST API Development (Spring Boot)</div>
+      <div class="card">JWT Authentication & Security</div>
+      <div class="card">Database Design (JPA)</div>
+      <div class="card">Scalable Backend Systems</div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT -->
+  <section class="section container">
+    <h2>Featured Project</h2>
+
+    <div class="card project-card">
+      <h3>AIrbnb - Rental Booking Backend System</h3>
+      <p>
+        A backend system built with Spring Boot and PostgreSQL to manage users,
+        listings, and bookings with real-world logic.
+      </p>
+
+      <ul class="features">
+        <li>JWT-based authentication and role-based access</li>
+        <li>Booking conflict handling (no overlapping reservations)</li>
+        <li>Pagination and filtering for optimized API responses</li>
+      </ul>
+
+      <a href="projects/airbnb.html" class="btn primary">View Details</a>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section container">
+    <h2>Tech Stack</h2>
+    <div class="tags">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>Spring Security</span>
+      <span>JPA</span>
+      <span>MySQL</span>
+      <span>PostgreSQL</span>
+      <span>REST APIs</span>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section container center">
+    <h2>Looking for Opportunities</h2>
+    <p>
+      I am currently seeking an entry-level Java Backend Developer role where I can contribute
+      to real-world backend systems and grow as a developer.
+    </p>
+
+    <a href="contact.html" class="btn primary">Get In Touch</a>
+  </section>
+
 </main>
 
-<footer>
+<!-- FOOTER -->
+<footer class="footer">
   <p>© 2026 Smit Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
